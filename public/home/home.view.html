@@ -1,0 +1,42 @@
+<!-- <h1>Hi {{vm.user.name}}!</h1>
+<p>You're logged in!!</p>
+<h3>All registered users:</h3>
+<ul>
+    <li ng-repeat="user in vm.allUsers">
+        {{user.username}} ({{user.firstName}} {{user.lastName}})
+        - <a ng-click="vm.deleteUser(user.id)">Delete</a>
+    </li>
+</ul>
+<p>&nbsp;</p>
+<p><a href="#!/login" class="btn btn-primary">Logout</a></p> -->
+
+<md-card div layout="column" ng-cloak class="md-inline-form">
+        <div layout="row" layout-align="end start">
+                <md-button href="#!/login">Logout</md-button>
+            </div>
+    <md-card-content layout-padding>
+            <md-toolbar md-scroll-shrink  md-colors="{background: 'background-900-2.43'}">
+                <div class="md-toolbar-tools">
+                    <h2><span><i class="fa fa-car" aria-hidden="true"></i> Pick A Ride</span></h2>
+                    
+                </div>
+            </md-toolbar>
+        <md-card>
+            <md-card-content>
+                <div layout="row">
+                    <md-input-container flex="50">
+                        <label>Starting From</label>
+                        <input name="startingFrom" ng-model="vm.startingFrom" ng-blur="vm.getFromLocation()">
+                    </md-input-container>
+            
+                    <md-input-container flex="50">
+                        <label>Destination</label>
+                        <input name="destination" ng-model="vm.destination" ng-blur="vm.getToLocation()">
+                        
+                    </md-input-container>
+                </div>
+            </md-card-content>
+        </md-card>
+        <owner-list owners="vm.allCars"></owner-list>    
+    </md-card-content>
+</md-card>

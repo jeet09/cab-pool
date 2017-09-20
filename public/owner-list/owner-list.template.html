@@ -1,0 +1,35 @@
+
+<ng-map zoom="12" center="{{vm.centerLocation}}" style="height:300px"
+on-center-changed="centerCustomMarker()">
+
+
+<div ng-repeat="item in vm.users track by $index">
+    
+    <marker position="{{item.from_cordinates}}" on-click="vm.showCustomMarker($index)" icon="https://png.icons8.com/taxi/color/24"></marker>
+    
+</div>
+<custom-marker id="foo" position="{{vm.ownerInfo.from_cordinates}}" on-click="vm.closeCustomMarker()">
+    <div>
+        
+        <md-card>
+            <md-card-title>
+                
+                <md-card-title-text>
+                <span class="md-headline">{{vm.ownerInfo.name}}</span>
+                </md-card-title-text>
+            </md-card-title>
+            <md-card-content>
+                <p>
+                    route: <b>{{vm.ownerInfo.from}}</b> to: <b>{{vm.ownerInfo.to}}</b>
+                </p>
+                <p>
+                    Car: <b>{{vm.ownerInfo.car}}</b> seats available: <b>{{vm.ownerInfo.seats_available}}</b>
+                </p>
+                <div layout-align="start start">
+                        <md-button ng-click="vm.confirmRide()"  class="buttonBlue">Confirm Ride</md-button>   
+                </div>
+            </md-card-content>
+            </md-card>
+    </div>
+</custom-marker>
+</ng-map>

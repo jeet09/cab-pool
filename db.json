@@ -1,0 +1,85 @@
+{
+    "users": [
+      {
+        "id": 1,
+        "name":"John Doe",
+        "from": "Koramangala",
+        "from_cordinates":"12.928549, 77.621463",
+        "to": "Whitefield",
+        "car": "Polo",
+        "seats_available": 3,
+        "ratings": 4.5
+
+      },
+      {
+        "id": 2,
+        "name":"Jane rae",
+        "from": "BTM",
+        "from_cordinates":"12.916515, 77.607486",
+        "to": "HSR",
+        "car": "Ritz",
+        "seats_available": 2,
+        "ratings": 4.2
+      },
+      {
+        "id": 3,
+        "name":"Wilson rao",
+        "from": "Whitefield",
+        "from_cordinates":"12.967648, 77.749503",
+        "to": "Silk Board",
+        "car": "WagonR",
+        "seats_available": 3,
+        "ratings": 3.8
+      },
+      {
+        "id": 4,
+        "name":"Akhil menon",
+        "from": "Electronic city",
+        "from_cordinates":"12.825365, 77.682437",
+        "to": "Bannerghatta",
+        "car": "POLO",
+        "seats_available": 1,
+        "ratings": 4.9
+      },
+      {
+        "id": 5,
+        "name":"Vaibhav kumar",
+        "from": "MG Road",
+        "from_cordinates":"12.972582, 77.619579",
+        "to": "Indiranagar",
+        "car": "Indica",
+        "seats_available": 3,
+        "ratings": 3.5
+      },
+      {
+        "id": 6,
+        "name":"Avinash",
+        "from": "Rajajinagar",
+        "from_cordinates":"13.008502, 77.554396",
+        "to": "Jayanagar",
+        "car": "POLO",
+        "seats_available": 3,
+        "ratings": 4.5
+      },
+      {
+        "id": 7,
+        "name":"Raj malhotra",
+        "from": "Koramangala",
+        "from_cordinates":"12.938211, 77.628845",
+        "to": "Whitefield",
+        "car": "Etios",
+        "seats_available": 1,
+        "ratings": 4.8
+      },
+      {
+        "id": 8,
+        "name":"Abhay raj",
+        "from": "MG Road",
+        "from_cordinates":"12.972724, 77.619714",
+        "to": "Indiranagar",
+        "car": "Polo",
+        "seats_available": 3,
+        "ratings": 4.8
+      }
+    ]
+}
